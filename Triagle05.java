@@ -1,20 +1,20 @@
 import java.util.Scanner;;
-public class Square05 {
+public class Triagle05 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        System.out.println("Masukan nilai N = ");
+        System.out.print("Masukan nilai N = ");
         int N = input.nextInt();
+        int i = 0;
 
-        for(int iOuter=1; iOuter<=N; iOuter++){
-            for(int i=0; i<=N; i++){
+        while (i <= N) {
+            int j = 0;
+            while (j < i) {
                 System.out.print("*");
+                j++;
             }
-            System.out.println();
+            i++;
         }
-
-
-
 
     }
     
